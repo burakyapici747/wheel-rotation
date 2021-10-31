@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Wheel System</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+        background-color: #26262c;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #text {
+        position: absolute;
+        margin: auto;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        margin-top: 75px;
+    }
+
+    .navIcon {
+        text-align: center;
+        transform: rotate(180deg);
+        color: #DCA657;
+    }
+
+    canvas {
+        display: block;
+        margin: auto;
+    }
+
+    .area {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin-top: -180px;
+    }
+
+    .btn {
+        width: 60px;
+        margin-bottom: 15px;
+        color: #C8354F;
+        background-color: transparent;
+        border: 1px solid #C8354F;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 2px;
+        z-index: 999;
+    }
+    .text{
+        color: white;
+        margin-bottom: 30px;
+    }
+</style>
+
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div class="area">
+        <i class="material-icons navIcon" id="arrow">navigation</i>
+        <a class="btn" id="rotate">Rotate</a>
+        <p class="text" id="txt">Random number: </p>
+    </div>
+
+    <script src="WheelHelpers.js"></script>
+    <script src="config.js" type="module"></script>
+    <script src="UI.js"></script>
+    <script src="Wheel.js" type="module"></script>
+    <script src="App.js" type="module"></script>
+</body>
+
+</html>
