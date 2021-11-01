@@ -3,7 +3,18 @@ JavaScript HTML Wheel Rotation
 
 ## Config.js Color Map
 
-You can change rectangle color from config.js.
+You can change rectangle color and index from config.js.
+
+**Color enum**
+
+``` js
+colorsEnum["blue"] = "#44B4DA";
+colorsEnum["red"] = "#C8354F";
+colorsEnum["gray"] = "#545454";
+colorsEnum["yellow"] = "#DCA657";
+```
+
+**Rectangle indexes **
 
 ``` js
 wheelEnvironments["wheelColors"] = {
