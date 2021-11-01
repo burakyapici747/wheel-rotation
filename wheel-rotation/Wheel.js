@@ -12,7 +12,6 @@ class Wheel extends WheelHelpers {
         this.canvas = canvas[0];
         this.ctx = canvas[1];
         this.arrow = canvas[2];
-        this.endAngle = 0;
         this.rndNumber = 0;
         this.rectRandomNumber = 0;
     }
