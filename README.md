@@ -14,7 +14,7 @@ colorsEnum["gray"] = "#545454";
 colorsEnum["yellow"] = "#DCA657";
 ```
 
-**Rectangle indexes **
+**Rectangle indexes**
 
 ``` js
 wheelEnvironments["wheelColors"] = {
